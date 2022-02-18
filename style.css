@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Vera-Mono';
+    src: url(fonts/VeraMono.ttf);
+}
+
+
+body {
+    background-color: #000000;
+    font-family: Vera-Mono;
+    color: #75f94c;
+    perspective: 1500px;
+    height: 100vh;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+}
+
+.bio:hover ~ .floppy {
+    display: none;
+}
+
+.portrait {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bio {
+    padding: 10px 0px;
+    font-size: 14px;
+    max-width: 600px;
+}
+
+.bio:hover ~ .floppy {
+    display: none;
+}
+
+.text {
+    padding: 10px;
+}
+
+.header {
+    font-size: 14px;
+    color: black;
+    background-color: #75f94c;
+    padding-left: 10px;
+}
+
+.list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.titles {
+    padding: 10px;
+}
+
+.link {
+    color: #75f94c;
+}
+
+
+
+div.floppy {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    animation: fadeIn 3s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateX() rotateY();
+  
+    @keyframes fadeIn {
+        0% {
+        visibility: hidden;
+        }
+        100% {
+        visibility: visible;
+        } 
+    }   
+}
+
+
+div.disk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+div.disk-cover {
+    width: 474px;
+    height: 497px;
+    background-image: url(img/floppyfrontnew.jpg);
+    transform: translateX(-50%) translateY(-50%) translateZ(6.5px);
+}
+
+div.disk-back {
+    width: 474px;
+    height: 497px;
+    background-image: url(img/floppybacknew.jpg);
+    transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(6.5px);
+}
+
+div.disk-right {
+    width: 13px;
+    height: 497px;
+    background-image: url(img/floppyrightnew.jpg);
+    transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(237px);
+}
+
+div.disk-left {
+    width: 13px;
+    height: 497px;
+    background-image: url(img/floppyleftnew.jpg);
+    transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(237px);
+}
+
+div.disk-top {
+    width: 474px;
+    height: 13px;
+    background-image: url(img/floppytopv4.jpg);
+    transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(248.5px);
+}
+
+div.disk-bottom {
+    width: 474px;
+    height: 13px;
+    background-image: url(img/floppybottomv3.jpg);
+    transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(248.5px);
+}
+
+
+@media (max-width:900px) {
+ 
+    div.floppy {
+        display: none;
+    }
+  
+}
+
+@media (min-width:900px) {
+
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .portrait {
+        display: none;
+    }
+
+    .text {
+        margin-block-end: 30px;
+    }
+
+    .titles:last-child {
+        margin-block-end: 30px;
+    }
+    
+    .bio {
+        color: black;
+        margin-top: 50px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .link {
+        color: black;
+    }    
+
+    .header {
+        background-color: black;
+        display: inline;
+        color: white;
+        margin: 50px 0px 0px 10px;
+        padding: 1px 5px;
+    }
+
+}
+
+   
