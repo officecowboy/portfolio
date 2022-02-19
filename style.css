@@ -29,6 +29,8 @@ body {
     padding: 10px 0px;
     font-size: 14px;
     max-width: 600px;
+    display: block;
+    margin: 0 auto;
 }
 
 .bio:hover ~ .floppy {
@@ -161,7 +163,6 @@ div.disk-bottom {
     .bio {
         color: black;
         margin-top: 50px;
-        font-size: 16px;
         margin-left: 20px;
     }
 
