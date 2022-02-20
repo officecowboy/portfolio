@@ -20,9 +20,10 @@ body {
 }
 
 .portrait {
-    max-width: 250px;
+    max-width: 165px;
     display: block;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .bio {
