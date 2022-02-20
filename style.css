@@ -70,16 +70,6 @@ div.floppy {
     animation: fadeIn 3s;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    transform: rotateX() rotateY();
-  
-    @keyframes fadeIn {
-        0% {
-        visibility: hidden;
-        }
-        100% {
-        visibility: visible;
-        } 
-    }   
 }
 
 
