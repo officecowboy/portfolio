@@ -69,3 +69,15 @@ document.getElementById("ia").addEventListener("mouseover", function () {
 document.getElementById("ia").addEventListener("mouseout", function () {
   document.getElementById("ia-img").style.display = "none";
 })
+
+let vid = document.getElementById("bb-vid")
+
+document.getElementById("bb").addEventListener("mouseover", function () {
+  vid.style.display = "block";
+  vid.play();
+})
+
+document.getElementById("bb").addEventListener("mouseout", function () {
+  vid.style.display = "none";
+  vid.pause();
+})
