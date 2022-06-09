@@ -1,3 +1,11 @@
+document.querySelector(".bio").addEventListener("mouseover", function () {
+  document.querySelector(".floppy").style.display = "none";
+})
+
+document.querySelector(".bio").addEventListener("mouseout", function () {
+  document.querySelector(".floppy").style.display = "block";
+})
+
 document.getElementById("raff").addEventListener("mouseover", function () {
   document.getElementById("raff-img").style.display = "block";
 })

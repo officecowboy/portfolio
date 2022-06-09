@@ -18,9 +18,6 @@ body {
   margin: 0;
 }
 
-.bio:hover~.floppy {
-  display: none;
-}
 
 .portrait {
   max-width: 165px;
@@ -36,6 +33,7 @@ body {
   display: block;
   margin: 0 auto;
 }
+
 
 .text {
   padding: 10px;
@@ -77,6 +75,7 @@ div.floppy {
   animation: fadeIn 3s;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  z-index: -1;
 }
 
 
@@ -85,6 +84,7 @@ div.disk {
   top: 0;
   left: 0;
   background-size: cover;
+  z-index: -1;
 }
 
 div.disk-cover {
@@ -145,11 +145,6 @@ div.disk-bottom {
     color: black;
   }
 
-  .bio {
-    height: 100%;
-    overflow-y: scroll;
-  }
-
   .portrait {
     display: none;
   }
@@ -162,6 +157,7 @@ div.disk-bottom {
   .preview {
     width: 50%;
     height: 100vh;
+    z-index: 0;
     display: flex;
     align-items: center;
     float: right;
@@ -185,12 +181,16 @@ div.disk-bottom {
   }
 
   .bio {
+    height: 100%;
     color: black;
     margin-top: 0px;
-    margin-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
     max-width: 40%;
     display: inline-block;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 1;
   }
 
   .link {
