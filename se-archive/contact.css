@@ -1,43 +1,44 @@
-#contact{
-	margin:auto;
-	background-color:rgba(0,0,0,0.0);
+#contact {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
-.contactBlock{
-	position:relative;
-	padding: 20px 0 20px 0;
+.contactBlock {
+  position: relative;
+  padding: 20px 0 20px 0;
   background-color: #040609;
 }
 
-.contactBlockFinal{
-	position:relative;
-	padding: 20px 0 50px 0;
+.contactBlockFinal {
+  position: relative;
+  padding: 20px 0 50px 0;
   background-color: #040609;
 }
 
-.contTitle, .contText, .contLink{
-    font-family: "Brandon Grotesque";
-    color: #ffffff;
-    text-align: center;
-    background-color:rgba(0,0,0,0.0);
-    transition:300ms;
+.contTitle,
+.contText,
+.contLink {
+  font-family: "Brandon Grotesque";
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.0);
+  transition: 300ms;
 }
 
-.contTitle{
-   font-size: 18px;
+.contTitle {
+  font-size: 18px;
   font-weight: 700;
+  margin: 2px;
   color: #eeeeee;
 }
 
-.contText{
-   font-size: 16px;
+.contText {
+  font-size: 16px;
+  margin: 2px;
 }
 
-.contLink:hover{
-    color: #ecb091;
-    transition:500ms;
-    text-shadow: 0 0 5px #ecb091;
+.contLink:hover {
+  color: #ecb091;
+  transition: 500ms;
+  text-shadow: 0 0 5px #ecb091;
 }
-
-
-
