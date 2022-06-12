@@ -1,0 +1,249 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+
+@font-face {
+  font-family: Brandon Grotesque;
+  src: url(brandongrotesque-medium.otf);
+}
+
+@font-face {
+    font-family: Brandon Grotesque Bold;
+  src: url(brandongrotesque-bold.otf);
+}
+
+@font-face {
+    font-family: Brandon Grotesque Black;
+  src: url(brandongrotesque-black.otf);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+#logonav {
+  width: 10vmax;
+}
+
+
+#menu {
+    margin: 0 auto;
+}
+
+
+/************************************************/
+/****************** NAVIGATION ******************/
+/************************************************/
+nav {
+    background: transparent;
+    color: #ffffff;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  	overflow: hidden;
+}
+
+nav a:hover {
+    color: #ecb091;
+    text-decoration: none;
+    transition:500ms;
+    text-shadow: 0 0 7px #ecb091;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background: #040609;
+  	opacity: 0.9;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  	animation: fade 0.3s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+/* List */
+nav ul {
+  font-family: Brandon Grotesque Black;
+  font-weight: 400;
+  font-size: 48px;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 0 0.5em 0.5em 0.5em;
+    max-height: inherit;
+    opacity: 1;
+    animation: fade 0.3s;
+}
+
+nav ul > li {
+    margin: 0.7em 0 0.7em 0;
+}
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: none;
+}
+
+/* Social Media */
+nav ul#social-media > li {
+  display: inline-block;
+  font-size: 36px;
+  margin: 0.5em  0.5em; }
+
+nav ul#social-media > li a {
+  position: relative; 
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #040609;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  transition: .5s;
+}
+
+ul#social-media li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ecb091;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul#social-media li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ecb091;
+}
+
+ul#social-media li a:hover {
+  color: #ecae95;
+  box-shadow: 0 0 5px #ecb091;
+  text-shadow: 0 0 5px #ecb091;
+}
+
+
+@media (max-width: 640px) {
+ 
+  nav ul {
+   font-size: 30px; 
+  }
+  
+  nav ul#social-media > li {
+
+  margin: 0.2em 0.2em 0.2em 0.2em;
+    
+  }
+  
+  nav ul#social-media > li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 43px;
+}
+  
+}

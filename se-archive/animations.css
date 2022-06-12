@@ -1,0 +1,74 @@
+@keyframes scroll {
+   100%{
+    background-position: -300px 300px;
+  }
+}
+
+
+@keyframes flicker {
+  0% {
+      	text-shadow: 0 0 1px #ffffff;
+  }
+  
+  30% {
+  	text-shadow: 0 0 4px #ffffff;
+	}
+  
+  50% {
+     text-shadow: 0 0 3px #ffffff;
+  }
+  
+  80% {
+         text-shadow: 0 0 5px #ffffff;
+  }
+  
+  100% {
+     text-shadow: 0 0 2px #ffffff;
+  }
+  
+}
+
+@keyframes flick {
+  0% {
+      	text-shadow: 0 0 1px #ffffff;
+  }
+  
+  30% {
+  	text-shadow: 0 0 4px #ffffff;
+	}
+  
+  50% {
+     text-shadow: 0 0 3px #ffffff;
+  }
+  
+  80% {
+         text-shadow: 0 0 4px #ffffff;
+  }
+  
+  100% {
+     text-shadow: 0 0 2px #ffffff;
+  }
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2500vw);
+  }
+}

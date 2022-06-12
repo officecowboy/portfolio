@@ -1,0 +1,433 @@
+@font-face {
+  font-family: Brandon Grotesque;
+  src: url(brandongrotesque-medium.otf);
+}
+
+@font-face {
+    font-family: Brandon Grotesque Bold;
+  src: url(brandongrotesque-bold.otf);
+}
+
+header {
+  padding: 10px 15px 5px 15px;
+  overflow: hidden;
+}
+
+body {
+  font-family: Brandon Grotesque, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: #040609;
+ 	background-image: url("pixel-galaxy---crop2.png");
+
+  animation: scroll 70s linear infinite;
+  color: #eee;
+  height: 100%;
+  min-width: 360px;
+  width: 100%;
+  perspective: 340px;
+  perspective-origin: 50% 50%;
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+#videonb {
+  overflow: hidden;
+  display: block;
+  height: 45em;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  justify-content: center;
+  padding: 0 20px 0 20px;
+}
+
+#videonb:hover {
+    transform: scale(1.1);
+  	transition: 500ms;
+ 		transition-timing-function: ease-out;
+}
+
+
+.posternb {
+  display: block;
+  background-color:  transparent;
+  background-size: cover;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.film {
+  display: block;
+  background-color:  transparent;
+  background-size: cover;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:12em;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+
+
+.info {
+    display: block;
+  background-color: #040609;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.tour {
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
+#postertitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#postertitlemobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+}
+
+
+.grid-container2 {
+  display: grid;
+  background-color: transparent;
+  background-size: cover;
+  max-width: 800px;
+  margin-left: -10px;
+  margin-right: 14px;
+  margin-top: 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 15px 15px;
+  color: #ffffff;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.grid-container2 > div {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1px 1px 1px 1px;
+	color: white;
+  animation: flicker 3s infinite;
+}
+
+.grid-container2 > div a:hover {
+  text-decoration: none;
+	color: #ecb091;
+  transition:500ms;
+  text-shadow: 0 0 5px #ecb091;
+}
+
+.grid-container2 > div ul {
+  text-decoration: line-through;
+}
+
+.grid-container3 > div a:hover {
+  text-decoration: none;
+	color: #ecb091;
+  transition:500ms;
+  text-shadow: 0 0 5px #ecb091;
+}
+
+.grid-container2 > div a {
+	color: white;
+  text-decoration: none;
+}
+
+.grid-container3 {
+  display: grid;
+  background-color: transparent;
+  background-size: cover;
+  max-width: 800px;
+  margin-left: -5px;
+  margin-right: 10px;
+  margin-top: 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px 10px;
+  color: #ffffff;
+  padding: 20px 15px 20px 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.grid-container3 > div {
+  text-align: center;
+  font-size: 12px;
+  font-family: Brandon Grotesque Bold;
+  font-weight: 700;
+	color: white;
+  animation: flick 3s infinite;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.grid-container3 > div a:hover {
+  text-decoration: none;
+	color: white;
+}
+
+.grid-container3 > div a {
+	color: white;
+  text-decoration: none;
+}
+
+.appear1 {
+  opacity: 0;
+  animation-name:  fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.appear2 {
+  opacity: 0;
+  animation-name:  fadeIn;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.appear3 {
+  opacity: 0;
+  animation-name:  fadeIn;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.marquee {
+  position: relative;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  line-height: 1;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.marquee span {
+  animation: moveLeft 500s infinite;
+  animation-timing-function: linear;
+  white-space: nowrap;
+  display: block;
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  text-shadow: 0 0 5px white;
+}
+
+.marquee span a {
+ color: white;
+  text-decoration: none;
+}
+
+.signup {
+  	display: block;	
+    font-family: Brandon Grotesque Bold;
+    color: #ffffff;
+    text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 40px 0 20px 0;
+  border-top: 5px solid #dddddd;
+}
+
+#signupwrapnb {
+  padding: 20px 20px  20px;
+
+}
+
+#signupform, #mobilenotice {
+	color: #fff;
+	margin: 0px auto 0px auto;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 13px;
+	text-align: center;
+	letter-spacing: 4px;
+	z-index: 4;
+    position: relative;
+    display: block;
+}
+
+#signupform input {
+	display: inline-block;
+	outline: none;
+    -webkit-appearance: none;
+}
+
+#signupform .email {
+    background: transparent;
+    border: 5px solid #ddd;
+    width: 370px;
+    padding: 15px 5px 15px 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: normal;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0px -7px 0px 0px;
+    font-weight: bold;
+    font-family: Brandon Grotesque, sans-serif, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+
+#signupform .signupbutton {
+    color: #ffffff;
+    font-family: Brandon Grotesque Bold;
+    font-size: 15px;
+    line-height: 15px;
+    vertical-align: bottom;
+    transition: 0.3s;
+    text-transform: uppercase;
+    padding: 18px 20px 19px 20px;
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 5px solid #ddd;
+    margin: 0 0 0 -5px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 0px;
+    font-family: Brandon Grotesque, sans-serif, sans-serif;
+}
+
+#signupform .signupbutton:hover {
+    color: #ecb091;
+    text-decoration: none;
+    transition:500ms;
+    text-shadow: 0 0 7px #ecb091;
+}
+
+
+
+
+@media (max-width:450px) {
+
+  
+  #signupform .signupbutton {
+		  padding: 15px 20px 15px 20px;
+    	font-size: 12px;
+}
+  
+  #signupform .email {
+    background: transparent;
+    border: 5px solid #ddd;
+    width: 220px;
+    padding: 14px 5px 13px 5px;
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+  #videonb {
+  overflow: hidden;
+  display: block;
+  height: 20em;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+  
+  .tour {
+   padding-top: 0px;
+  }
+
+#videonb:hover {
+    transform: none;
+  	transition: none;
+}
+  
+  .film {
+    padding-top: 10em;
+  }
+  
+  .marquee span {
+    font-size: 24px;
+  }
+  
+  .marquee span {
+    animation: moveLeft 250s infinite; 
+    animation-timing-function: linear;
+    text-shadow: 0 0 3px white;
+  }
+  
+}
+
+@media (max-width: 620px) {
+  .grid-container2 {
+    display: none;
+  }
+  
+  #postertitle {
+    display: none;
+  }
+  
+  .grid-container3 {
+    display: grid;
+  }
+  
+  #postertitlemobile {
+    display: block;
+  }
+  
+}
+
+@media (min-width: 620px) {
+  .grid-container2 {
+    display: grid;
+  }
+  
+  #postertitle {
+	display: block;
+  }
+  
+  .grid-container3 {
+    display: none;
+  }
+  
+  #postertitlemobile {
+    display: none;
+  }
+  
+}
+
+
+
+
+
+

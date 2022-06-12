@@ -81,3 +81,15 @@ document.getElementById("bb").addEventListener("mouseout", function () {
   vid.style.display = "none";
   vid.pause();
 })
+
+let seVid = document.getElementById("se-vid")
+
+document.getElementById("se2").addEventListener("mouseover", function () {
+  seVid.style.display = "block";
+  seVid.play();
+})
+
+document.getElementById("se2").addEventListener("mouseout", function () {
+  seVid.style.display = "none";
+  seVid.pause();
+})
